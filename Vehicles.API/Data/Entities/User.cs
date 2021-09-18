@@ -48,5 +48,8 @@ namespace Vehicles.API.Data.Entities
         public UserType UserType { get; set; }
 
         public string FullName => $"{FirstName} {LastName}";
+
+        public ICollection<Vehicle> Vehicles { get; set; }
+
     }
 }

@@ -19,5 +19,7 @@ namespace Vehicles.API.Data.Entities
         [DisplayFormat(DataFormatString = "{0:C2}")]  //Dos decimales
         [Required(ErrorMessage = "El campo  {0} es obligatorio.")]  // Precio obligatoria 
         public decimal Price { get; set; }
+
+        public ICollection<Detail> Details { get; set; }
     }
 }
